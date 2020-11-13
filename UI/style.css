@@ -1,0 +1,57 @@
+/*body*/
+body{
+  background: white;
+}
+
+/*circle*/
+.halves-circle{
+  background: #fff;
+  height: 200px;
+  width: 200px;
+  border: 5px dotted;
+  border-radius: 50%;
+  border-color: black black yellow yellow;
+  transform: rotate(45deg);
+   -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:3s;    
+}
+
+/* button */
+.btn {
+  height: 180px;
+  line-height: 70px;  
+  width: 180px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: silver;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px; 
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+}
+ 
+/*paragraph*/
+.pg{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/*for rotation of circle*/
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(0deg) } 
+to { -webkit-transform:rotate(360deg) } 
+}
+@-moz-keyframes orbit { 
+from { -moz-transform:rotate(0deg) } 
+to { -moz-transform:rotate(360deg) } 
+}

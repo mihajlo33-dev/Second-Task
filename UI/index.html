@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+    <body>
+        <div class="halves-circle" id="circle">
+        <div class="btn" id="btn-click"><p class="pg">Click me</p></div>
+        </div>
+        
+    </body>
+    <script>
+     var links = document.getElementById("btn-click");
+        
+     var first_click = true;
+      links.onclick = function() {
+    if (first_click) {
+        document.getElementById("btn-click").addEventListener('click',function(){
+          document.getElementById("circle").style.borderColor = "black black yellow yellow";
+        });
+        first_click = false;
+    } else  {
+        first_click = true;
+        document.getElementById("btn-click").addEventListener('click',function(){
+         document.getElementById("circle").style.borderColor = "yellow black yellow black";
+        });
+        
+    }
+}
+        
+        
+          
+        
+         
+        
+        
+       
+        
+    </script>
+</html>
